@@ -61,7 +61,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
+    <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-rose-50 to-rose-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md">
         <div className="bg-white dark:bg-zinc-800 rounded-lg shadow-lg p-8">
           {/* Header */}
@@ -76,8 +76,8 @@ export default function LoginPage() {
 
           {/* Success Message */}
           {successMessage && (
-            <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
-              <p className="text-green-800 dark:text-green-200 font-medium">{successMessage}</p>
+            <div className="mb-6 p-4 bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800 rounded-lg">
+              <p className="text-rose-800 dark:text-rose-200 font-medium">{successMessage}</p>
             </div>
           )}
 
@@ -99,7 +99,7 @@ export default function LoginPage() {
                   errors.email
                     ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                     : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-                } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors`}
+                } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-rose-500 transition-colors`}
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-600 dark:text-red-400 flex items-center gap-1">
@@ -128,7 +128,7 @@ export default function LoginPage() {
                     errors.password
                       ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                       : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors pr-12`}
+                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-rose-500 transition-colors pr-12`}
                 />
                 <button
                   type="button"
@@ -168,7 +168,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:bg-green-500 disabled:cursor-not-allowed transition-colors font-medium"
+              className="w-full py-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 disabled:bg-rose-500 disabled:cursor-not-allowed transition-colors font-medium"
             >
               {isSubmitting ? "Signing in..." : "Sign In"}
             </button>
@@ -182,9 +182,9 @@ export default function LoginPage() {
           </div>
 
           {/* Demo Credentials */}
-          <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 mb-6">
-            <p className="text-sm font-medium text-green-900 dark:text-green-200 mb-2">Demo Credentials:</p>
-            <p className="text-xs text-green-800 dark:text-green-300">
+          <div className="p-4 bg-rose-50 dark:bg-rose-900/20 rounded-lg border border-rose-200 dark:border-rose-800 mb-6">
+            <p className="text-sm font-medium text-rose-900 dark:text-rose-200 mb-2">Demo Credentials:</p>
+            <p className="text-xs text-rose-800 dark:text-rose-300">
               Email: demo@example.com<br />
               Password: Demo@1234
             </p>
@@ -194,7 +194,7 @@ export default function LoginPage() {
           <div className="text-center">
             <p className="text-zinc-600 dark:text-zinc-400">
               New to Accel Rose's Garden?{" "}
-              <Link href="/signup" className="text-green-600 hover:text-green-700 font-medium">
+              <Link href="/signup" className="text-rose-600 hover:text-rose-700 font-medium">
                 Register here
               </Link>
             </p>

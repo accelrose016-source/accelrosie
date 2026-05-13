@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
+    <div className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-rose-50 to-rose-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto text-center">
         {/* Hero Section */}
         <div className="mb-12">
           <h1 className="text-5xl sm:text-6xl font-bold text-zinc-900 dark:text-white mb-6 leading-tight">
-            Welcome to <span className="text-green-600">Accel Rose's Garden</span>
+            Welcome to <span className="text-rose-600">Accel Rose's Garden</span>
           </h1>
           <p className="text-xl sm:text-2xl text-zinc-600 dark:text-zinc-300 mb-8 leading-relaxed">
             Beautiful flowers and plants for every occasion. Discover our premium selection of fresh roses, exotic plants, and garden arrangements.
@@ -18,9 +18,9 @@ export default function Home() {
         {/* Feature Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white dark:bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <div className="w-12 h-12 bg-rose-100 dark:bg-rose-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
               <svg
-                className="w-6 h-6 text-green-600"
+                className="w-6 h-6 text-rose-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -42,9 +42,9 @@ export default function Home() {
           </div>
 
           <div className="bg-white dark:bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <div className="w-12 h-12 bg-rose-100 dark:bg-rose-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
               <svg
-                className="w-6 h-6 text-emerald-600"
+                className="w-6 h-6 text-rose-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -66,9 +66,9 @@ export default function Home() {
           </div>
 
           <div className="bg-white dark:bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <div className="w-12 h-12 bg-rose-100 dark:bg-rose-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
               <svg
-                className="w-6 h-6 text-green-600"
+                className="w-6 h-6 text-rose-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -94,13 +94,13 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/login"
-            className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg"
+            className="px-8 py-4 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors font-semibold text-lg"
           >
             Shop Now
           </Link>
           <Link
             href="/signup"
-            className="px-8 py-4 bg-white dark:bg-zinc-800 text-green-600 dark:text-green-400 border-2 border-green-600 rounded-lg hover:bg-green-50 dark:hover:bg-zinc-700 transition-colors font-semibold text-lg"
+            className="px-8 py-4 bg-white dark:bg-zinc-800 text-rose-600 dark:text-rose-400 border-2 border-rose-600 rounded-lg hover:bg-rose-50 dark:hover:bg-zinc-700 transition-colors font-semibold text-lg"
           >
             Subscribe to Updates
           </Link>

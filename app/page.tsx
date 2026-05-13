@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-rose-50 to-rose-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
+    <div className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-pink-50 to-rose-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto text-center">
         {/* Hero Section */}
         <div className="mb-12">
           <h1 className="text-5xl sm:text-6xl font-bold text-zinc-900 dark:text-white mb-6 leading-tight">
-            Welcome to <span className="text-rose-600">Accel Rose's Garden</span>
+            Welcome to <span className="text-rose-400">Accel Rose's Garden</span>
           </h1>
           <p className="text-xl sm:text-2xl text-zinc-600 dark:text-zinc-300 mb-8 leading-relaxed">
             Beautiful flowers and plants for every occasion. Discover our premium selection of fresh roses, exotic plants, and garden arrangements.
@@ -94,13 +94,13 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/login"
-            className="px-8 py-4 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-colors font-semibold text-lg"
+            className="px-8 py-4 bg-rose-400 text-white rounded-lg hover:bg-rose-500 transition-colors font-semibold text-lg"
           >
             Shop Now
           </Link>
           <Link
             href="/signup"
-            className="px-8 py-4 bg-white dark:bg-zinc-800 text-rose-600 dark:text-rose-400 border-2 border-rose-600 rounded-lg hover:bg-rose-50 dark:hover:bg-zinc-700 transition-colors font-semibold text-lg"
+            className="px-8 py-4 bg-white dark:bg-zinc-800 text-rose-400 dark:text-rose-300 border-2 border-rose-400 rounded-lg hover:bg-pink-50 dark:hover:bg-zinc-700 transition-colors font-semibold text-lg"
           >
             Subscribe to Updates
           </Link>

@@ -8,6 +8,7 @@ export default function SignupPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    church: "",
     password: "",
     confirmPassword: "",
   });
@@ -70,6 +71,7 @@ export default function SignupPage() {
       setFormData({
         name: "",
         email: "",
+        church: "",
         password: "",
         confirmPassword: "",
       });
@@ -86,16 +88,16 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8 py-8">
+    <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8 py-8">
       <div className="w-full max-w-md">
         <div className="bg-white dark:bg-zinc-800 rounded-lg shadow-lg p-8">
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-zinc-900 dark:text-white mb-2">
-              Join BBBYO Fellowship
+              Join Accel Rose's Garden
             </h1>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Register to be part of our vibrant youth ministry and annual camp
+              Create an account to browse and order beautiful flowers
             </p>
           </div>
 
@@ -124,7 +126,7 @@ export default function SignupPage() {
                   errors.name
                     ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                     : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-              } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors`}
+                } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors`}
               />
               {errors.name && (
                 <p className="mt-1 text-sm text-red-600 dark:text-red-400 flex items-center gap-1">
@@ -149,11 +151,36 @@ export default function SignupPage() {
                   errors.email
                     ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                     : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-              } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors`}
+                } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors`}
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-600 dark:text-red-400 flex items-center gap-1">
                   <span>⚠</span> {errors.email}
+                </p>
+              )}
+            </div>
+
+            {/* Church Field */}
+            <div>
+              <label htmlFor="church" className="block text-sm font-medium text-zinc-900 dark:text-white mb-2">
+                How did you hear about us?
+              </label>
+              <input
+                type="text"
+                id="church"
+                name="church"
+                value={formData.church}
+                onChange={handleChange}
+                placeholder="Friend, Social Media, etc."
+                className={`w-full px-4 py-2 rounded-lg border ${
+                  errors.church
+                    ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
+                    : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
+                } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors`}
+              />
+              {errors.church && (
+                <p className="mt-1 text-sm text-red-600 dark:text-red-400 flex items-center gap-1">
+                  <span>⚠</span> {errors.church}
                 </p>
               )}
             </div>
@@ -178,7 +205,7 @@ export default function SignupPage() {
                     errors.password
                       ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                       : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors pr-12`}
+                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors pr-12`}
                 />
                 <button
                   type="button"
@@ -210,9 +237,9 @@ export default function SignupPage() {
 
               {/* Password Strength Feedback */}
               {formData.password && passwordFeedback.length > 0 && (
-                <div className="mt-2 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded">
-                  <p className="text-sm font-medium text-amber-900 dark:text-amber-200 mb-1">Password requirements:</p>
-                  <ul className="text-xs text-amber-800 dark:text-amber-300 space-y-0.5">
+                <div className="mt-2 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded">
+                  <p className="text-sm font-medium text-green-900 dark:text-green-200 mb-1">Password requirements:</p>
+                  <ul className="text-xs text-green-800 dark:text-green-300 space-y-0.5">
                     {passwordFeedback.map((feedback, index) => (
                       <li key={index} className="flex items-center gap-1">
                         <span className="text-red-500">✗</span> {feedback}
@@ -257,7 +284,7 @@ export default function SignupPage() {
                     errors.confirmPassword
                       ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                       : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors pr-12`}
+                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors pr-12`}
                 />
                 <button
                   type="button"
@@ -297,7 +324,7 @@ export default function SignupPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 disabled:bg-blue-500 disabled:cursor-not-allowed transition-colors font-medium mt-6"
+              className="w-full py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:bg-green-500 disabled:cursor-not-allowed transition-colors font-medium mt-6"
             >
               {isSubmitting ? "Creating Account..." : "Register Now"}
             </button>
@@ -307,7 +334,7 @@ export default function SignupPage() {
           <div className="mt-6 text-center">
             <p className="text-zinc-600 dark:text-zinc-400">
               Already registered?{" "}
-              <Link href="/login" className="text-blue-700 hover:text-blue-800 font-medium">
+              <Link href="/login" className="text-green-600 hover:text-green-700 font-medium">
                 Sign in here
               </Link>
             </p>

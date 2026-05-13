@@ -12,8 +12,8 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold text-blue-700 dark:text-blue-400">
-              BBBYO Fellowship
+            <Link href="/" className="text-xl font-bold text-green-600 dark:text-green-400">
+              Accel Rose's Garden
             </Link>
           </div>
 
@@ -33,7 +33,7 @@ export default function Navigation() {
             </Link>
             <Link
               href="/signup"
-              className="px-6 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium"
+              className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
             >
               Join Us
             </Link>
@@ -80,7 +80,7 @@ export default function Navigation() {
             </Link>
             <Link
               href="/signup"
-              className="block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 font-medium"
+              className="block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 font-medium"
               onClick={() => setIsOpen(false)}
             >
               Join Us

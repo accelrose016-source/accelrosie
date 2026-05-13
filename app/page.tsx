@@ -2,25 +2,25 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-purple-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
+    <div className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto text-center">
         {/* Hero Section */}
         <div className="mb-12">
           <h1 className="text-5xl sm:text-6xl font-bold text-zinc-900 dark:text-white mb-6 leading-tight">
-            Welcome to <span className="text-blue-700">BOHOL BIBLE BAPTIST YOUTH FELLOWSHIP</span>
+            Welcome to <span className="text-green-600">Accel Rose's Garden</span>
           </h1>
           <p className="text-xl sm:text-2xl text-zinc-600 dark:text-zinc-300 mb-8 leading-relaxed">
-            A vibrant youth ministry connecting young believers across Bohol. 
-            Build leadership, strengthen faith, and create unforgettable memories at our annual youth camps.
+            Beautiful flowers and plants for every occasion. Discover our premium selection of fresh roses, exotic plants, and garden arrangements.
+            Celebrate life's special moments with nature's finest blooms.
           </p>
         </div>
 
         {/* Feature Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white dark:bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
               <svg
-                className="w-6 h-6 text-blue-700"
+                className="w-6 h-6 text-green-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -34,17 +34,17 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
-              Youth Leadership Network
+              Premium Rose Collection
             </h3>
             <p className="text-zinc-600 dark:text-zinc-300">
-              Connect with core leaders from churches across Bohol and develop your leadership skills.
+              Explore our stunning collection of premium roses in various colors and varieties. Perfect for weddings, anniversaries, and special celebrations.
             </p>
           </div>
 
           <div className="bg-white dark:bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
               <svg
-                className="w-6 h-6 text-purple-700"
+                className="w-6 h-6 text-emerald-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -58,17 +58,17 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
-              Annual Youth Camp
+              Custom Arrangements
             </h3>
             <p className="text-zinc-600 dark:text-zinc-300">
-              Register and manage your participation in our exciting annual youth camp experience.
+              Create personalized floral arrangements tailored to your needs. From bouquets to garden designs, we bring your vision to life.
             </p>
           </div>
 
           <div className="bg-white dark:bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
               <svg
-                className="w-6 h-6 text-blue-700"
+                className="w-6 h-6 text-green-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -82,10 +82,10 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
-              Leadership Selection
+              Garden Plants & More
             </h3>
             <p className="text-zinc-600 dark:text-zinc-300">
-              Core leaders nominate and select camp leaders and assistant leaders for our ministry.
+              Beyond roses, discover our selection of exotic plants, indoor greenery, and outdoor garden solutions for your home.
             </p>
           </div>
         </div>
@@ -94,22 +94,22 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/login"
-            className="px-8 py-4 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors font-semibold text-lg"
+            className="px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg"
           >
-            Youth Leader Login
+            Shop Now
           </Link>
           <Link
             href="/signup"
-            className="px-8 py-4 bg-white dark:bg-zinc-800 text-blue-700 dark:text-blue-400 border-2 border-blue-700 rounded-lg hover:bg-blue-50 dark:hover:bg-zinc-700 transition-colors font-semibold text-lg"
+            className="px-8 py-4 bg-white dark:bg-zinc-800 text-green-600 dark:text-green-400 border-2 border-green-600 rounded-lg hover:bg-green-50 dark:hover:bg-zinc-700 transition-colors font-semibold text-lg"
           >
-            Join Fellowship
+            Subscribe to Updates
           </Link>
         </div>
 
         {/* Additional Info */}
         <div className="mt-16 pt-8 border-t border-zinc-300 dark:border-zinc-700">
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            Open to young believers from Baptist churches across Bohol. Build your faith and leadership with us.
+            Delivering fresh, beautiful flowers and plants to bring joy and beauty to your life. Quality guaranteed, customer satisfaction assured.
           </p>
         </div>
       </div>

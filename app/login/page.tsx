@@ -61,16 +61,16 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
+    <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 dark:from-zinc-900 dark:to-zinc-800 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md">
         <div className="bg-white dark:bg-zinc-800 rounded-lg shadow-lg p-8">
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-zinc-900 dark:text-white mb-2">
-              BOHOL BIBLE BAPTIST YOUTH FELLOWSHIP
+              Accel Rose's Garden
             </h1>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Youth Leader Portal - Access camp management and leadership tools
+              Login to manage your flower orders and account
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function LoginPage() {
                   errors.email
                     ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                     : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-                } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors`}
+                } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors`}
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-600 dark:text-red-400 flex items-center gap-1">
@@ -128,7 +128,7 @@ export default function LoginPage() {
                     errors.password
                       ? "border-red-500 dark:border-red-600 bg-red-50 dark:bg-red-900/10"
                       : "border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700"
-                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors pr-12`}
+                  } text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors pr-12`}
                 />
                 <button
                   type="button"
@@ -168,7 +168,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 disabled:bg-blue-500 disabled:cursor-not-allowed transition-colors font-medium"
+              className="w-full py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:bg-green-500 disabled:cursor-not-allowed transition-colors font-medium"
             >
               {isSubmitting ? "Signing in..." : "Sign In"}
             </button>
@@ -182,9 +182,9 @@ export default function LoginPage() {
           </div>
 
           {/* Demo Credentials */}
-          <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 mb-6">
-            <p className="text-sm font-medium text-blue-900 dark:text-blue-200 mb-2">Demo Credentials:</p>
-            <p className="text-xs text-blue-800 dark:text-blue-300">
+          <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 mb-6">
+            <p className="text-sm font-medium text-green-900 dark:text-green-200 mb-2">Demo Credentials:</p>
+            <p className="text-xs text-green-800 dark:text-green-300">
               Email: demo@example.com<br />
               Password: Demo@1234
             </p>
@@ -193,8 +193,8 @@ export default function LoginPage() {
           {/* Footer Links */}
           <div className="text-center">
             <p className="text-zinc-600 dark:text-zinc-400">
-              New to BBBYO Fellowship?{" "}
-              <Link href="/signup" className="text-blue-700 hover:text-blue-800 font-medium">
+              New to Accel Rose's Garden?{" "}
+              <Link href="/signup" className="text-green-600 hover:text-green-700 font-medium">
                 Register here
               </Link>
             </p>
